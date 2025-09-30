@@ -1,6 +1,9 @@
-import SolapiMessageService from 'solapi';
+// lib/solapi.ts
+// lib/solapi.ts
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const solapi = require('solapi');
 
-const messageService = new SolapiMessageService(
+const messageService = solapi(
   process.env.SOLAPI_API_KEY!,
   process.env.SOLAPI_API_SECRET!
 );
